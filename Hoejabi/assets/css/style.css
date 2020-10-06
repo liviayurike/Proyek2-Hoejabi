@@ -15,8 +15,13 @@ body {
 
 a {
   color: #3498db;
+  font-family: 'Lucida Handwriting'
 }
-
+b{
+  color: #444444;
+  font-family: serif;
+  font-size: small;
+}
 a:hover {
   color: #5faee3;
   text-decoration: none;
