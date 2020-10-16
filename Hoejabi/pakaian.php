@@ -97,103 +97,56 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Produk Hijab Pilihan</h2>
+                    <h2>Produk Pakaian Pilihan</h2>
                     <p>Pilih produk yang Anda inginkan!</p>
                 </div>
 
                 <div class="row portfolio-container">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="">
-                                <a href="assets/img/portfolio/1.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
+                                <img src="assets/img/portfolio/14.jpg" class="img-fluid" alt="">
+                                <a href="assets/img/portfolio/14.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Vanya In Purple</a></h4>
-                                <p>RP 92.000</p>
+                                <h4><a href="portfolio-details.html">Kaluna Brukat Dress</a></h4>
+                                <p>Rp171.500</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="">
-                                <a href="assets/img/portfolio/2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                                <img src="assets/img/portfolio/15.jpg" class="img-fluid" alt="">
+                                <a href="assets/img/portfolio/15.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Vanya In Grey</a></h4>
-                                <p>RP 92.000</p>
+                                <h4><a href="portfolio-details.html">Brand New Valia Tunik</a></h4>
+                                <p>Rp45.000</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="">
-                                <a href="assets/img/portfolio/3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                                <img src="assets/img/portfolio/16.jpg" class="img-fluid" alt="">
+                                <a href="assets/img/portfolio/16.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 011</a></h4>
-                                <p>Rp155.000</p>
+                                <h4><a href="portfolio-details.html">Sahfa Blouse</a></h4>
+                                <p>Rp94.000</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="assets/img/portfolio/4.jpg" class="img-fluid" alt="">
-                                <a href="assets/img/portfolio/4.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 010</a></h4>
-                                <p>Rp155.000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="assets/img/portfolio/6.jpg" class="img-fluid" alt="">
-                                <a href="assets/img/portfolio/6.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 005</a></h4>
-                                <p>Rp145.000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="assets/img/portfolio/7.jpg" class="img-fluid" alt="">
-                                <a href="assets/img/portfolio/7.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 009</a></h4>
-                                <p>Rp145.000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
         </section><!-- End Portfolio Section -->

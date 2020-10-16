@@ -60,6 +60,7 @@
                                     <li><a href="ikatinner.php">Ikat dan Inner</a></li>
                                 </ul>
                             </li>
+                            <li><a href="pakaian.php">Pakaian</a></li>
                         </ul>
                     </li>
                     <li><a href="about.php">About</a></li>
@@ -435,10 +436,8 @@
                                 Membuat situs. Secara umum, tugas utama web developer adalah membangun situs melalui satu atau lebih bahasa pemrograman.
                             </p>
                             <div class="social">
-                                <a href=""><i class="icofont-twitter"></i></a>
-                                <a href=""><i class="icofont-facebook"></i></a>
-                                <a href=""><i class="icofont-instagram"></i></a>
-                                <a href=""><i class="icofont-linkedin"></i></a>
+                                <a href="https://www.facebook.com/livia.yurike1"><i class="icofont-facebook"></i></a>
+                                <a href="https://www.instagram.com/liviayurike/"><i class="icofont-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -452,10 +451,8 @@
                                 Berperan untuk mengambil keputusan yang menjadi wewenangnya, antara lain mengenai realokasi sumber daya, mengubah lingkup proyek, menyeimbangkan kriteria biaya, jadwal dan performansi.
                             </p>
                             <div class="social">
-                                <a href=""><i class="icofont-twitter"></i></a>
-                                <a href=""><i class="icofont-facebook"></i></a>
-                                <a href=""><i class="icofont-instagram"></i></a>
-                                <a href=""><i class="icofont-linkedin"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100012242190033"><i class="icofont-facebook"></i></a>
+                                <a href="https://www.instagram.com/dimahyantidwii/"><i class="icofont-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -469,10 +466,8 @@
                                 Seorang desainer web bertanggung jawab untuk menciptakan sebuah situs atau halaman web, ini termasuk desain, tata letak dan coding web, ini dapat berarti bekerja pada sebuah website baru atau memperbarui situs yang sudah ada.
                             </p>
                             <div class="social">
-                                <a href=""><i class="icofont-twitter"></i></a>
-                                <a href=""><i class="icofont-facebook"></i></a>
-                                <a href=""><i class="icofont-instagram"></i></a>
-                                <a href=""><i class="icofont-linkedin"></i></a>
+                                <a href="https://www.facebook.com/nuruslailyaprillia/"><i class="icofont-facebook"></i></a>
+                                <a href="https://www.instagram.com/nuruslailya/"><i class="icofont-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -486,10 +481,8 @@
                                 Pekerjaan analis sistem melibatkan hubungan banyak orang, tidak terbatas pada sesama analis sistem,programer tetapi juga pemakai sistem dan manajer.
                             </p>
                             <div class="social">
-                                <a href=""><i class="icofont-twitter"></i></a>
-                                <a href=""><i class="icofont-facebook"></i></a>
-                                <a href=""><i class="icofont-instagram"></i></a>
-                                <a href=""><i class="icofont-linkedin"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100004312024150"><i class="icofont-facebook"></i></a>
+                                <a href="https://www.instagram.com/yovita_farah/"><i class="icofont-instagram"></i></a>
                             </div>
                         </div>
                     </div>

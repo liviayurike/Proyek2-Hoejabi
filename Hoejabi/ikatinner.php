@@ -60,6 +60,7 @@
                                     <li><a href="ikatinner.php">Ikat dan Inner</a></li>
                                 </ul>
                             </li>
+                            <li><a href="pakaian.php">Pakaian</a></li>
                         </ul>
                     </li>
                     <li><a href="about.php">About</a></li>
