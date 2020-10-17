@@ -44,4 +44,5 @@ class database{
 		$_SESSION['nama'] = $data_user['nama'];
 		$_SESSION['is_login'] = TRUE;
 	}
+	
 }

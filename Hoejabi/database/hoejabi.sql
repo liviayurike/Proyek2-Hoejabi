@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 17 Okt 2020 pada 03.26
--- Versi Server: 10.1.10-MariaDB
--- PHP Version: 7.3.2
+-- Waktu pembuatan: 17 Okt 2020 pada 11.06
+-- Versi server: 10.1.37-MariaDB
+-- Versi PHP: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,87 @@ SET time_zone = "+00:00";
 --
 -- Database: `hoejabi`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `acc.hijab`
+--
+
+CREATE TABLE `acc.hijab` (
+  `id` int(20) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `deskripsi` varchar(10000) NOT NULL,
+  `gambar` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(10) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `message` varchar(10000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `hijab`
+--
+
+CREATE TABLE `hijab` (
+  `id` int(10) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `deskripsi` varchar(10000) NOT NULL,
+  `gambar` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pakaian`
+--
+
+CREATE TABLE `pakaian` (
+  `id` int(20) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `deskripsi` varchar(10000) NOT NULL,
+  `gambar` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `testimonial`
+--
+
+CREATE TABLE `testimonial` (
+  `id` int(10) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `deskripsi` varchar(10000) NOT NULL,
+  `nama_barang` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `transaksi`
+--
+
+CREATE TABLE `transaksi` (
+  `id` int(10) NOT NULL,
+  `nama` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -47,20 +130,34 @@ INSERT INTO `user` (`id`, `username`, `password`, `nama`) VALUES
 --
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `hijab`
+--
+ALTER TABLE `hijab`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `hijab`
+--
+ALTER TABLE `hijab`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
