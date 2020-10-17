@@ -72,7 +72,6 @@ if (!isset($_SESSION['is_login'])) {
                     <li><a href="about.php">About</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="logout.php" class="form-inline my-2 my-lg-0 btn btn-secondary">Logout</a></li>
 
                 </ul>
             </nav><!-- .nav-menu -->
@@ -92,10 +91,9 @@ if (!isset($_SESSION['is_login'])) {
         <div class="container text-center text-md-left" data-aos="fade-up">
             <h1>Welcome to <span>Hoejabi</span></h1>
             <div class="starter-template">
-            <h1>Selamat Datang <?php echo $_SESSION['nama']; ?></h1>
-        </div>
-            <h2>Temukan gaya hijabmu sekarang!</h2>
-
+            <h2><i>Assalamualaikum <?php echo $_SESSION['nama']; ?><br>
+            Temukan gaya hijabmu sekarang!</i></h2>
+            <a href="logout.php" class="form-inline my-2 my-lg-0 btn btn-secondary">Logout</a>
         </div>
     </section><!-- End Hero -->
 
