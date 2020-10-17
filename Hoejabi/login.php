@@ -4,12 +4,12 @@ include_once('db_connect.php');
 $database = new database();
 
 if (isset($_SESSION['is_login'])) {
-    header('location:home.php');
+    header('location:index-user.php');
 }
 
 if (isset($_COOKIE['username'])) {
     $database->relogin($_COOKIE['username']);
-    header('location:home.php');
+    header('location:index-user.php');
 }
 
 if (isset($_POST['login'])) {
@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
     }
 
     if ($database->login($username, $password, $remember)) {
-        header('location:home.php');
+        header('location:index-user.php');
     }
 }
 ?>
