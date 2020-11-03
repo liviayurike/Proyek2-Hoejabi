@@ -34,7 +34,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>admin/dashboard">
         <div class="sidebar-brand-icon">
-          <img src="<?php echo base_url('img/PolinemaXX_logoAdmin.png');?>" width="200">
+        <img src="<?php echo base_url('assets/img/favicon.png');?>" width="200">
         </div>
       </a>
 
@@ -57,27 +57,53 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item open active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-film"></i>
-          <span>Movie</span>
+          
+          <span>Hijab</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/film"><i class="fas fa-fw fa-film" aria-hidden="true"></i> Data Movie</a>
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahFilm"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Movie</a>
+            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/hijab"><!--<i class="fas fa-fw fa-film" aria-hidden="true"></i>--> Data Hijab</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahHijab"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Hijab</a>
           </div>
         </div>
       </li>
 
-      <li class="nav-item active">
+      <li class="nav-item open active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          
+          <span>Accessories Hijab</span>
+        </a>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/acchijab"><!--<i class="fas fa-fw fa-film" aria-hidden="true"></i>--> Data Accessories Hijab</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahAccHijab"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Accessories Hijab</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item open active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          
+          <span>Pakaian</span>
+        </a>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/pakaian"><!--<i class="fas fa-fw fa-film" aria-hidden="true"></i>--> Data Pakaian</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahPakaian"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Pakaian</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           <i class="fas fa-fw fa-users"></i>
           <span>Member</span>
         </a>
-        <div id="collapseThree" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/member"><i class="fas fa-fw fa-users" aria-hidden="true"></i> Data Member</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/member"><i class="fas fa-fw fa-users" aria-hidden="true"></i> Data Member</a>
             <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahMember"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Member</a>
           </div>
         </div>
@@ -86,12 +112,12 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
           <i class="fas fa-fw fa-location-arrow "></i>
-          <span>Theater</span>
+          <span>Testimonials</span>
         </a>
         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/theater"><i class="fas fa-fw fa-location-arrow" aria-hidden="true"></i> Data Theater</a>
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahTheater"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Theater</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/testimonials"><i class="fas fa-fw fa-location-arrow" aria-hidden="true"></i> Data Testimonials</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahTestimonials"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Testimonials</a>
           </div>
         </div>
       </li>
@@ -157,7 +183,7 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-film"></i> Movie</h1><br>
+          <h1 class="h3 mb-2 text-gray-800"><!--<i class="fas fa-fw fa-film"></i>--> Hijab</h1><br>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
@@ -184,6 +210,7 @@
                       <th>Alamat</th>
                       <th>No Telepon</th>
                       <th>E-mail</th>
+                      <th>Username</th>
                       <th>Aksi</th>
                     </tr>
                   </thead>
@@ -196,6 +223,7 @@
                       <td><?= $m['alamat']; ?></td>
                       <td><?= $m['nohp']; ?></td>
                       <td><?= $m['email']; ?></td>
+                      <td><?= $m['username']; ?></td>
                       <td><a class="btn btn-success" href="<?php echo base_url(); ?>admin/detailMember/<?= $m['id_user'];?>">Detail</a>
                         <a class="btn btn-warning" href="<?php echo base_url(); ?>admin/editMember/<?= $m['id_user'];?>"> Edit</a>
                           <a class="btn btn-danger" href="<?php echo base_url(); ?>admin/hapusMember/<?= $m['id_user'];?>"> Hapus</a></td>
@@ -217,7 +245,7 @@
       <footer class="sticky-footer bg-green" style="color: white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; 2020 <a href="#" style="color: white" >PolinemaXX</a>. All Right Reserved</span>
+            <span>Copyright &copy; 2020 <a href="#" style="color: white" >Hoejabi Hijab Shop</a>. All Right Reserved</span>
           </div>
         </div>
       </footer>

@@ -51,7 +51,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url('img/PolinemaXX_logoAdmin.png');?>" class="logo-hdr" width="300"></a>
+            <a class="navbar-brand" href="<?php echo base_url('assets/img/favicon.png')?>" class="logo-hdr" width="300"></a>
         </div>
     </nav>
 </header>
@@ -64,7 +64,7 @@
         <div class="container">
             <div class="login-inner">
                 <div class="login-form">
-                    <img src="<?php echo base_url('img/male_user.png');?>" width="100px" height="100px"></img>
+                    <img src="<?php echo base_url('assets/img/favicon.png')?>" width="100px" height="100px"></img>
                     <form>
                         <div class="pom-agile">
                             <span class="fa fa-user" aria-hidden="true"></span>
@@ -89,7 +89,7 @@
      <footer>
         <div class="container">
             <div class="footer-line">
-                <h4> Copyrights &copy 2020 <a href="#">PolinemaXX</a>. All Right Reserved</h4>
+                <h4> Copyrights &copy 2020 <a href="#">Hoejabi Hijab Shop</a>. All Right Reserved</h4>
             </div>
         </div>
     </footer>

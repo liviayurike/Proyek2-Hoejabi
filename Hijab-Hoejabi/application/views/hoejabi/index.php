@@ -41,7 +41,7 @@
         <div class="container d-flex align-items-center">
 
             <div class="logo mr-auto">
-                <h1><a href="index.php">Hoejabi<h6><b> Hijab Shop</b></h6></a></h1>
+                <h1><a href="<?php echo base_url(); ?>">Hoejabi<h6><b> Hijab Shop</b></h6></a></h1>
 
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -52,15 +52,15 @@
                     <li class="active"><a href="index.php">Home</a></li>
                     <li class="drop-down"><a href="">Product</a>
                         <ul>
-                            <li><a href="hijab.php">Hijab</a></li>
-                            <li class="drop-down"><a href="#">Accesories Hijab</a>
+                            <li><a href="<?php echo base_url();?>hoejabi/hijab">Hijab</a></li>
+                            <li class="drop-down"><a href="<?php echo base_url();?>hoejabi/acchijab">Accesories Hijab</a>
                                 <ul>
-                                    <li><a href="anting.php">Anting</a></li>
-                                    <li><a href="kalung.php">Kalung</a></li>
-                                    <li><a href="ikatinner.php">Ikat dan Inner</a></li>
+                                    <li><a href="<?php echo base_url();?>hoejabi/acchijab">Anting</a></li>
+                                    <li><a href="<?php echo base_url();?>hoejabi/acchijab">Kalung</a></li>
+                                    <li><a href="<?php echo base_url();?>hoejabi/acchijab">Ikat dan Inner</a></li>
                                 </ul>
                             </li>
-                            <li><a href="pakaian.php">Pakaian</a></li>
+                            <li><a href="<?php echo base_url();?>hoejabi/pakaian">Pakaian</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php echo base_url(); ?>hoejabi/about">About</a></li>

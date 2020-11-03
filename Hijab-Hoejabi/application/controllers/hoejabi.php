@@ -31,7 +31,7 @@ class hoejabi extends CI_Controller {
     public function hijab($id_hijab)
     {
         $data['title']='Hoejabi | Hijab';
-        $data['hijab']= $this->hoejabi_model->getHijabId($id);
+        $data['hijab']= $this->hoejabi_model->getHijabId($id_hijab);
         $this->load->view('hoejabi/hijab',$data);
     }
 
@@ -44,6 +44,13 @@ class hoejabi extends CI_Controller {
         $this->load->view('hoejabi/anting', $data);
         $this->load->view('hoejabi/ikatinner', $data);
         $this->load->view('hoejabi/kalung', $data);
+    }
+
+    public function pakaian($id_pakaian)
+    {
+        $data['title']='Hoejabi | Hijab';
+        $data['pakaian']= $this->hoejabi_model->getPakaianId($id_pakaian);
+        $this->load->view('hoejabi/pakaian',$data);
     }
 
     public function about()

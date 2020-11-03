@@ -34,7 +34,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>admin/dashboard">
         <div class="sidebar-brand-icon">
-          <img src="<?php echo base_url('img/PolinemaXX_logoAdmin.png');?>" width="200">
+          <img src="<?php echo base_url('assets/img/favicon.png');?>" width="200">
         </div>
       </a>
 
@@ -59,13 +59,39 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item open active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-film"></i>
-          <span>Movie</span>
+          
+          <span>Hijab</span>
         </a>
         <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/film"><i class="fas fa-fw fa-film" aria-hidden="true"></i> Data Movie</a>
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahFilm"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Movie</a>
+            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/hijab"><!--<i class="fas fa-fw fa-film" aria-hidden="true"></i>--> Data Hijab</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahHijab"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Hijab</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item open active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          
+          <span>Accessories Hijab</span>
+        </a>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/acchijab"><!--<i class="fas fa-fw fa-film" aria-hidden="true"></i>--> Data Accessories Hijab</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahAccHijab"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Accessories Hijab</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item open active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          
+          <span>Pakaian</span>
+        </a>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item active" href="<?php echo base_url(); ?>admin/pakaian"><!--<i class="fas fa-fw fa-film" aria-hidden="true"></i>--> Data Pakaian</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahPakaian"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Pakaian</a>
           </div>
         </div>
       </li>
@@ -86,12 +112,12 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
           <i class="fas fa-fw fa-location-arrow "></i>
-          <span>Theater</span>
+          <span>Testimonials</span>
         </a>
         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/theater"><i class="fas fa-fw fa-location-arrow" aria-hidden="true"></i> Data Theater</a>
-            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahTheater"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Theater</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/testimonials"><i class="fas fa-fw fa-location-arrow" aria-hidden="true"></i> Data Testimonials</a>
+            <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahTestimonials"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Testimonials</a>
           </div>
         </div>
       </li>
@@ -157,13 +183,13 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-film"></i> Movie</h1><br>
+          <h1 class="h3 mb-2 text-gray-800"><!--<i class="fas fa-fw fa-film"></i>--> Pakaian</h1><br>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">
-              <a href="<?php echo base_url(); ?>admin/tambahFilm"><i class="fas fa-fw fa-plus"></i>Tambah Data</a></h6>
+              <a href="<?php echo base_url(); ?>admin/tambahPakaian"><i class="fas fa-fw fa-plus"></i>Tambah Pakaian</a></h6>
             </div>
         <div class="card-body">
               <div class="table-responsive">
@@ -179,21 +205,24 @@
                 <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0" style="color: black">
                   <thead class="table-dark bg-green-dark text-white" align="center" style="font-size: 15px">
                     <tr>
-                      <th>ID Movie</th>
-                      <th>Judul Movie</th>
-                      <th>Kategori</th>
-                      <th>Aksi</th>
+                      <th>ID Pakaian</th>
+                      <th>Nama</th>
+                      <th>Harga</th>
+                      <th>Deskripsi</th>
+                      <th>Gambar</th>
                     </tr>
                   </thead>
                   <tbody align="center">
                   <?php
-                    foreach($film as $f){?>
+                    foreach($pakaian as $p){?>
                     <tr>
-                      <td><?= $f['id_film']; ?></td>
-                      <td><?= $f['nama']; ?></td>
-                      <td><?= $f['kategori']; ?></td>
-                      <td><a class="btn btn-success" href="<?php echo base_url(); ?>admin/detailFilm/<?= $f['id_film'];?>">Detail</a>
-                          <a class="btn btn-danger" href="<?php echo base_url(); ?>admin/hapusFilm/<?= $f['id_film'];?>"> Hapus</a></td>
+                      <td><?= $p['id_pakaian']; ?></td>
+                      <td><?= $p['nama']; ?></td>
+                      <td><?= $p['harga']; ?></td>
+                      <td><?= $p['deskripsi']; ?></td>
+                      <td><?= $p['gambar']; ?></td>
+                      <td><a class="btn btn-success" href="<?php echo base_url(); ?>admin/detailPakaian/<?= $f['id_pakaian'];?>">Detail</a>
+                          <a class="btn btn-danger" href="<?php echo base_url(); ?>admin/hapusPakaian/<?= $f['id_pakaian'];?>"> Hapus</a></td>
                     </tr>
                     <?php } ?>
                   </tbody>
@@ -212,7 +241,7 @@
       <footer class="sticky-footer bg-green" style="color: white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; 2020 <a href="#" style="color: white" >PolinemaXX</a>. All Right Reserved</span>
+            <span>Copyright &copy; 2020 <a href="#" style="color: white" >Hoejabi Hijab Shop</a>. All Right Reserved</span>
           </div>
         </div>
       </footer>

@@ -112,7 +112,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
           <i class="fas fa-fw fa-location-arrow "></i>
-          <span>Theater</span>
+          <span>Testimonials</span>
         </a>
         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -122,6 +122,7 @@
         </div>
       </li>
 
+      
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>admin/laporan">
           <i class="fas fa-fw fa-chart-area "></i>
@@ -179,11 +180,11 @@
         </nav>
         <!-- End of Topbar -->
 
-        <div class="container-fluid">
+          <div class="container-fluid">
             <!-- Page Heading -->
             <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-tachometer-alt"></i> Dashboard</h1><br>
 
-            <div class="row">
+              <div class="row">
 
                 <div class="col-md-11 col-md-6 mb-4" style="background-color: #CAD8E5; align-content: center; margin-left: 50px; padding-bottom: 30px">
                     <div class="xs"><br>
@@ -198,17 +199,51 @@
                     </div>
                 </div>
 
-                <!-- Jumlah Flm -->
+                <!-- Jumlah hijab -->
                 <div class="col-xl-4 col-md-6 mb-4" style="margin-left: 50px">
                   <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                       <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Film</div>
-                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $film; ?></div>
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Hijab</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $hijab; ?></div>
                         </div>
                         <div class="col-auto">
-                          <i class="fas fa-film fa-2x text-gray-300"></i>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Jumlah acchijab -->
+                <div class="col-xl-4 col-md-6 mb-4" style="margin-left: 50px">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Accessories Hijab</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $acchijab; ?></div>
+                        </div>
+                        <div class="col-auto">
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Jumlah pakaian -->
+                <div class="col-xl-4 col-md-6 mb-4" style="margin-left: 50px">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Pakaian</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $pakaian; ?></div>
+                        </div>
+                        <div class="col-auto">
+                         
                         </div>
                       </div>
                     </div>
@@ -232,28 +267,11 @@
                   </div>
                 </div>
 
-                <!-- Jumlah Theater -->
-                <div class="col-xl-4 col-md-6 mb-4">
-                  <div class="card border-left-info shadow h-100 py-2">
-                    <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                          <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Banyak Theater</div>
-                          <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo $theater; ?></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-auto">
-                          <i class="fas fa-location-arrow fa-2x text-gray-300"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!-- Jumlah  -->
+               
+              </div>
             </div>
-        </div>
+        
         <!-- /.container-fluid -->
       <!-- End of Main Content -->
       <br><br><br><br><br><br><br>
