@@ -34,23 +34,24 @@
 
         <?php
         $sql = "SELECT * FROM transaksi";
+        $db = "hoejabi";
         $query = mysqli_query($db, $sql);
 
         while($transaksi = mysqli_fetch_array($query)){
             echo "<tr>";
 
-            echo "<td>".$transaksi['Nama']."</td>";
-            echo "<td>".$transaksi['No Telp/Wa']."</td>";
-            echo "<td>".$transaksi['Alamat']."</td>";
-            echo "<td>".$transaksi['Email']."</td>";
-            echo "<td>".$transaksi['Product']."</td>";
-            echo "<td>".$transaksi['Harga']."</td>";
-            echo "<td>".$transaksi['Total Harga']."</td>";
-            echo "<td>".$transaksi['Via Pembayaran']."</td>";
+            echo "<td>".$transaksi['nama']."</td>";
+            echo "<td>".$transaksi['notelp']."</td>";
+            echo "<td>".$transaksi['alamat']."</td>";
+            echo "<td>".$transaksi['email']."</td>";
+            echo "<td>".$transaksi['produk']."</td>";
+            echo "<td>".$transaksi['harga']."</td>";
+            echo "<td>".$transaksi['totalharga']."</td>";
+            echo "<td>".$transaksi['viapembayaran']."</td>";
 
             echo "<td>";
-            echo "<a href='form-edit.php?id=".$pembeli['Nama']."'>Edit</a> | ";
-            echo "<a href='hapus.php?id=".$pembeli['Nama']."'>Hapus</a>";
+            echo "<a href='form-edit.php?id=".$pembeli['nama']."'>Edit</a> | ";
+            echo "<a href='hapus.php?id=".$pembeli['nama']."'>Hapus</a>";
             echo "</td>";
 
             echo "</tr>";

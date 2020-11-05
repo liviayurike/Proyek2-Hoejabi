@@ -3,20 +3,20 @@
 include("db_connect.php");
 
 // cek apakah tombol daftar sudah diklik atau blum?
-if(isset($_POST['Lakukan Transaksi'])){
+if(isset($_POST['transaksi'])){
 
     // ambil data dari formulir
-    $nama = $_POST['Nama'];
-    $notelp = $_POST['No Telp/Wa'];
-    $alamat = $_POST['Alamat'];
-    $email = $_POST['Email'];
-    $product = $_POST['Product'];
-    $harga = $_POST['Harga'];
-    $totharga = $_POST['Total Harga'];
-    $pembayaran = $_POST['Via Pembayaran'];
+    $nama = $_POST['nama'];
+    $notelp = $_POST['notelp'];
+    $alamat = $_POST['alamat'];
+    $email = $_POST['email'];
+    $product = $_POST['produk'];
+    $harga = $_POST['harga'];
+    $totharga = $_POST['totalharga'];
+    $pembayaran = $_POST['viapembayaran'];
 
     // buat query
-    $sql = "INSERT INTO transaksi (Nama, No Telp/Wa, Alamat, Email, Product, Harga, Total Harga, Via Pembayaran) VALUE ('$nama', '$notelp', '$alamat', '$email', '$product', '$harga', '$totharga', '$pembayaran')";
+    $sql = "INSERT INTO transaksi (nama, notelp, alamat, email, produk, harga, totalharga, viapembayaran) VALUE ('$nama', '$notelp', '$alamat', '$email', '$produk', '$harga', '$totalharga', '$viapembayaran')";
     $query = mysqli_query($db, $sql);
 
     // apakah query simpan berhasil?

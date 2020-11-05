@@ -85,7 +85,7 @@
         <div class="container text-center text-md-left" data-aos="fade-up">
             <h1>Welcome to <span>Hoejabi</span></h1>
             <h2>Temukan gaya hijabmu sekarang!</h2>
-            <a href="login.php" class="btn-get-started scrollto">Login</a>
+            <a href="<?php echo base_url(); ?> hoejabi/login"class="btn-get-started scrollto">Login</a>
 
         </div>
     </section><!-- End Hero -->
@@ -113,7 +113,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="produk.php">Produk</a></h4>
+                            <h4><a href="<?php echo base_url(); ?>hoejabi/produk">>Produk</a></h4>
                             <p>Pilih Produk yang Anda inginkan!</p>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bxs-cart-add"></i></div>
-                            <h4><a href="keranjang.php">Keranjang</a></h4>
+                            <h4><a href="<?php echo base_url(); ?>hoejabi/keranjang">Keranjang</a></h4>
                             <p>Masukkan Ke dalam Keranjang!</p>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-blanket"></i></div>
-                            <h4><a href="transaksi.php">Transaksi</a></h4>
+                            <h4><a href="<?php echo base_url(); ?>hoejabi/transaksi">>Transaksi</a></h4>
                             <p>Lakukan Transaksi Hijab!</p>
                         </div>
                     </div>

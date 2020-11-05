@@ -6,18 +6,18 @@ class hoejabi_model extends CI_Model {
 
     //hijab
     public function getHijab(){
-        return $this->db->get('hijab')->result_array();
+        return $this->db->get('hijab')->result();
     }
 
     public function getHijabId($id_hijab)
     {
-        return $this->db->get_where('hijab',['id_hijab' => $id_hijab])->result_array();
+        return $this->db->get_where('hijab',['id_hijab' => $id_hijab])->row();
     }
 
     public function datatabelsHijab()
     {
         $query = $this->db->order_by('id_hijab','DESC')->get('hijab');
-        return $query->result_array();
+        return $query->result();
     }
 
     public function hapushijab($id_hijab)
