@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2020 at 09:47 AM
+-- Generation Time: Nov 11, 2020 at 01:56 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -20,20 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `hoejabi`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `acchijab`
---
-
-CREATE TABLE `acchijab` (
-  `id_acchijab` int(20) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `harga` int(20) NOT NULL,
-  `deskripsi` varchar(10000) NOT NULL,
-  `gambar` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -73,20 +59,6 @@ CREATE TABLE `contact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hijab`
---
-
-CREATE TABLE `hijab` (
-  `id_hijab` int(10) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `harga` int(20) NOT NULL,
-  `deskripsi` varchar(10000) NOT NULL,
-  `gambar` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `keranjang`
 --
 
@@ -102,14 +74,15 @@ CREATE TABLE `keranjang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pakaian`
+-- Table structure for table `produk`
 --
 
-CREATE TABLE `pakaian` (
-  `id_pakaian` int(20) NOT NULL,
+CREATE TABLE `produk` (
+  `id_produk` int(10) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `harga` int(20) NOT NULL,
   `deskripsi` varchar(10000) NOT NULL,
+  `kategori_produk` varchar(100) NOT NULL,
   `gambar` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -175,10 +148,10 @@ INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `nama`, `nohp`, 
 --
 
 --
--- Indexes for table `hijab`
+-- Indexes for table `produk`
 --
-ALTER TABLE `hijab`
-  ADD PRIMARY KEY (`id_hijab`);
+ALTER TABLE `produk`
+  ADD PRIMARY KEY (`id_produk`);
 
 --
 -- Indexes for table `user`
@@ -191,10 +164,10 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT for table `hijab`
+-- AUTO_INCREMENT for table `produk`
 --
-ALTER TABLE `hijab`
-  MODIFY `id_hijab` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `produk`
+  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
