@@ -158,74 +158,56 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Tables User</h1>
+                            <h1 class="page-header"><button type="button" class="btn btn-light"><a href="tables-user.php">Kembali</button></h1>
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
                     <!-- /.row -->
                         <!-- /.col-lg-6 -->
                         <div class="col-lg-12">
+                                <!-- /.panel-heading -->
+                                <div class="row">
+                        <div class="col-lg-8">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    Table User
+                                <i class="fa fa-user fa-fw"></i>Detail User
                                 </div>
-                                <!-- /.panel-heading -->
                                 <div class="panel-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>No</th>
-                                                    <th>Email</th>
-                                                    <th>Username</th>
-                                                    <th>Nama</th>
-                                                    <th>No hp</th>
-                                                    <th>Alamat</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="danger">
-                                                    <td>1</td>
-                                                    <td>liviayurike@gmail.com</td>
-                                                    <td>Livia</td>
-                                                    <td>Livia Yurike</td>
-                                                    <td>08735654242</td>
-                                                    <td>Jl. Ikan Piranha </td>
-                                                    <td><button type="button" class="btn btn-secondary"><a href="detail_user.php">Detail</button>
-                                                    <button type="button" class="btn btn-light"><a href="edit-user.php">Edit</button>
-                                                    <button type="button" class="btn btn-dark">Hapus</button></td>
-
-                                                </tr>
-                                                <tr class="danger">
-                                                    <td>2</td>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr class="danger">
-                                                    <td>3</td>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
-                                                <tr class="danger">
-                                                    <td>4</td>
-                                                    <td>John</td>
-                                                    <td>Smith</td>
-                                                    <td>@jsmith</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
+                                <table class="table table-borderless"  style="color: black">
+                                <tbody>
+                              <tr>
+                              <td class="text-right">Nama</td>
+                                <td>:</td>
+                                <td><?= $t['nama']; ?></td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">Username</td>
+                                <td>:</td>
+                                <td><?= $t['username']; ?></td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">Email</td>
+                                <td>:</td>
+                                <td><?= $t['email']; ?></td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">No hp</td>
+                                <td>:</td>
+                                <td><?= $t['nohp']; ?></td>
+                              </tr>
+                              <tr>
+                                <td class="text-right">Alamat</td>
+                                <td>:</td>
+                                <td><?= $t['alamat']; ?></td>
+                              </tr>
+                              </tbody>
+                                </table>
                                 </div>
-                                <!-- /.panel-body -->
+                                <div class="panel-footer">
+                                    Hoejabi Hijab Shop
+                                </div>
                             </div>
-                            <!-- /.panel -->
                         </div>
-                        <!-- /.col-lg-6 -->
-                    </div>
                     <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->

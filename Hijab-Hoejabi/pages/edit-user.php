@@ -15,12 +15,6 @@
         <!-- MetisMenu CSS -->
         <link href="../css/metisMenu.min.css" rel="stylesheet">
 
-        <!-- DataTables CSS -->
-        <link href="../css/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-
-        <!-- DataTables Responsive CSS -->
-        <link href="../css/dataTables/dataTables.responsive.css" rel="stylesheet">
-
         <!-- Custom CSS -->
         <link href="../css/startmin.css" rel="stylesheet">
 
@@ -56,6 +50,7 @@
                 </ul>
 
                 <ul class="nav navbar-right navbar-top-links">
+                    
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             <i class="fa fa-user fa-fw"></i> secondtruth <b class="caret"></b>
@@ -158,73 +153,61 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Tables User</h1>
+                            <h1 class="page-header"><button type="button" class="btn btn-light"><a href="tables-user.php">Kembali</button></h1>
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
                     <!-- /.row -->
-                        <!-- /.col-lg-6 -->
+                    <div class="row">
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    Table User
+                                    Edit User
                                 </div>
-                                <!-- /.panel-heading -->
                                 <div class="panel-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                <table class="table">
                                                 <tr>
-                                                    <th>No</th>
-                                                    <th>Email</th>
-                                                    <th>Username</th>
-                                                    <th>Nama</th>
-                                                    <th>No hp</th>
-                                                    <th>Alamat</th>
-                                                    <th>Action</th>
+                                                    <th>Nama : </th>
+                                                    <td> <input class="form-control" placeholder="Nama" value=" "></td>
                                                 </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="danger">
-                                                    <td>1</td>
-                                                    <td>liviayurike@gmail.com</td>
-                                                    <td>Livia</td>
-                                                    <td>Livia Yurike</td>
-                                                    <td>08735654242</td>
-                                                    <td>Jl. Ikan Piranha </td>
-                                                    <td><button type="button" class="btn btn-secondary"><a href="detail_user.php">Detail</button>
-                                                    <button type="button" class="btn btn-light"><a href="edit-user.php">Edit</button>
-                                                    <button type="button" class="btn btn-dark">Hapus</button></td>
-
+                                                <tr>
+                                                <th>Email : </th>
+                                                    <td> <input class="form-control" type="email" placeholder="Email" value=" "></td>
+                                                    </tr>
+                                                <tr>
+                                                    <th>Username : </th>
+                                                    <td><input type="text" class="form-control" placeholder="@Username" value=" "></td>
                                                 </tr>
-                                                <tr class="danger">
-                                                    <td>2</td>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
+                                                <tr>
+                                                    <th>No hp : </th>
+                                                    <td> <input class="form-control" placeholder="No hp" type="number" value=" "></td>
                                                 </tr>
-                                                <tr class="danger">
-                                                    <td>3</td>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
+                                                <tr>
+                                                    <th>Alamat : </th>
+                                                    <td> <textarea class="form-control" rows="3" value=" "></textarea></td>
                                                 </tr>
-                                                <tr class="danger">
-                                                    <td>4</td>
-                                                    <td>John</td>
-                                                    <td>Smith</td>
-                                                    <td>@jsmith</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        </table> 
+                                                </div>
+                                                <button type="submit" class="btn btn-default">Submit Button</button>
+                                                <button type="reset" class="btn btn-default">Reset Button</button>
+                                            </form>
+                                        </div>
+                                        <!-- /.col-lg-6 (nested) -->
+                                            </form>
+                                        </div>
+                                        <!-- /.col-lg-6 (nested) -->
                                     </div>
-                                    <!-- /.table-responsive -->
+                                    <!-- /.row (nested) -->
                                 </div>
                                 <!-- /.panel-body -->
                             </div>
                             <!-- /.panel -->
                         </div>
-                        <!-- /.col-lg-6 -->
+                        <!-- /.col-lg-12 -->
                     </div>
                     <!-- /.row -->
                 </div>
@@ -244,21 +227,8 @@
         <!-- Metis Menu Plugin JavaScript -->
         <script src="../js/metisMenu.min.js"></script>
 
-        <!-- DataTables JavaScript -->
-        <script src="../js/dataTables/jquery.dataTables.min.js"></script>
-        <script src="../js/dataTables/dataTables.bootstrap.min.js"></script>
-
         <!-- Custom Theme JavaScript -->
         <script src="../js/startmin.js"></script>
-
-        <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-        <script>
-            $(document).ready(function() {
-                $('#dataTables-example').DataTable({
-                        responsive: true
-                });
-            });
-        </script>
 
     </body>
 </html>
