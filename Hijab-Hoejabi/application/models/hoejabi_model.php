@@ -3,28 +3,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class hoejabi_model extends CI_Model {
 
     //produk
-    public function getProduct(){
+    public function getProduk(){
         return $this->db->get('produk')->result();
     }
 
-    public function getProductId($id_produk)
+    public function getProdukId($id_produk)
     {
         return $this->db->get_where('produk',['id_produk' => $id_produk])->row();
     }
 
-    public function datatabelsProduct()
+    public function datatabelsProduk()
     {
         $query = $this->db->order_by('id_produk','DESC')->get('produk');
         return $query->result();
     }
 
-    public function hapusproduct($id_produk)
+    public function hapusproduk($id_produk)
     {
         $this->db->where('id_produk', $id_produk);
         $this->db->delete('produk');
     }
 
-    public function jumlahProduct()
+    public function jumlahProduk()
     {
         $query = $this->db->get('produk');
         if($query->num_rows()>0)
@@ -37,7 +37,7 @@ class hoejabi_model extends CI_Model {
         }
     }
 
-    public function tambahProduct($data)
+    public function tambahProduk($data)
     {
         
         $insert_data['nama'] = $data['nama'];    
@@ -51,7 +51,7 @@ class hoejabi_model extends CI_Model {
     }
 
 
-    public function searchProduct(){
+    public function searchProduk(){
         $keyword=$this->input->post('keyword');
         $this->db->like('nama',$keyword);
         return $this->db->get('produk')->result_array();
