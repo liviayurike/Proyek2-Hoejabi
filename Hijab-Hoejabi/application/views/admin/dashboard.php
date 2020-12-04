@@ -7,14 +7,14 @@
         <meta name="author" content="">
     <title>Hoejabi Hijab Shop - Admin</title>
     <link href="pages/assets/favicon.png" rel="icon">
-    <link href="<?php echo base_url('assets/admin/vendor/fontawesome-free/css/all.min.css');?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('pages/assets/admin/vendor/fontawesome-free/css/all.min.css');?>" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?php echo base_url('assets/admin/css/sb-admin-2.css');?>" rel="stylesheet">
+  <link href="<?php echo base_url('pages/assets/admin/css/sb-admin-2.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this page -->
-  <link href="<?php echo base_url('assets/admin/vendor/datatables/dataTables.bootstrap4.min.css');?>" rel="stylesheet">
+  <link href="<?php echo base_url('pages/assets/admin/vendor/datatables/dataTables.bootstrap4.min.css');?>" rel="stylesheet">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
 <div id="wrapper">
 
   <!-- Sidebar -->
-  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>admin/dashboard">
@@ -60,12 +60,12 @@
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item ">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fas fa-fw fa-film"></i>
-        <span>Movie</span>
+        <i class="fas fa-fw fa-tasks"></i>
+        <span>Product</span>
       </a>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="<?php echo base_url(); ?>admin/produk"><i class="fas fa-fw fa-film" aria-hidden="true"></i> Data Product</a>
+          <a class="collapse-item" href="<?php echo base_url(); ?>admin/produk"><i class="fas fa-fw fa-tasks" aria-hidden="true"></i> Data Product</a>
           <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahProduk"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Product</a>
         </div>
       </div>
@@ -86,7 +86,7 @@
 
     <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-        <i class="fas fa-fw fa-location-arrow "></i>
+        <i class="fas fa-fw fa-shopping-cart "></i>
         <span>Keranjang</span>
       </a>
       <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -122,7 +122,7 @@
     <div id="content">
 
       <!-- Topbar -->
-      <nav class="navbar navbar-expand navbar-light bg-green topbar mb-4 static-top shadow">
+      <nav class="navbar navbar-expand navbar-light bg-grey topbar mb-4 static-top shadow">
 
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
@@ -183,7 +183,7 @@
                         <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $produk; ?></div>
                       </div>
                       <div class="col-auto">
-                        <i class="fas fa-film fa-2x text-gray-300"></i>
+                        <i class="fas fa-tasks fa-2x text-gray-300"></i>
                       </div>
                     </div>
                   </div>
@@ -221,7 +221,7 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <i class="fas fa-location-arrow fa-2x text-gray-300"></i>
+                        <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
                       </div>
                     </div>
                   </div>
@@ -234,10 +234,10 @@
     <br><br><br><br><br><br><br>
 
       <!-- Footer -->
-    <footer class="sticky-footer bg-green" style="color: white">
+    <footer class="sticky-footer bg-grey" style="color: black">
       <div class="container my-auto">
         <div class="copyright text-center my-auto">
-          <span>Copyright &copy; 2020 <a href="#" style="color: white" >Hijab Hoejabi Shop</a>. All Right Reserved</span>
+          <span>Copyright &copy; 2020 <a href="#" style="color: black" >Hijab Hoejabi Shop</a>. All Right Reserved</span>
         </div>
       </div>
     </footer>
@@ -274,21 +274,21 @@
 </div>
 
         <!-- jQuery -->
-        <script src="<?php echo base_url('assets/admin/vendor/jquery/jquery.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+        <script src="<?php echo base_url('pages/assets/admin/vendor/jquery/jquery.min.js');?>"></script>
+  <script src="<?php echo base_url('pages/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="<?php echo base_url('assets/admin/vendor/jquery-easing/jquery.easing.min.js');?>"></script>
+  <script src="<?php echo base_url('pages/assets/admin/vendor/jquery-easing/jquery.easing.min.js');?>"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="<?php echo base_url('assets/admin/js/sb-admin-2.min.js');?>"></script>
+  <script src="<?php echo base_url('pages/assets/admin/js/sb-admin-2.min.js');?>"></script>
 
   <!-- Page level plugins -->
-  <script src="<?php echo base_url('assets/admin/vendor/datatables/jquery.dataTables.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/admin/vendor/datatables/dataTables.bootstrap4.min.js');?>"></script>
+  <script src="<?php echo base_url('pages/assets/admin/vendor/datatables/jquery.dataTables.min.js');?>"></script>
+  <script src="<?php echo base_url('pages/assets/admin/vendor/datatables/dataTables.bootstrap4.min.js');?>"></script>
 
   <!-- Page level custom scripts -->
-  <script src="<?php echo base_url('assets/admin/js/demo/datatables-demo.js');?>"></script>
+  <script src="<?php echo base_url('pages/assets/admin/js/demo/datatables-demo.js');?>"></script>
 
     </body>
 </html>
