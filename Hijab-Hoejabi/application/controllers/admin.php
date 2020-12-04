@@ -15,7 +15,8 @@ class admin extends CI_Controller {
     public function dashboard()
 	{
 		$data['produk'] = $this->hoejabi_model->jumlahProduk();
-		$data['member'] = $this->hoejabi_model->jumlahMember();
+        $data['member'] = $this->hoejabi_model->jumlahMember();
+        $data['keranjang'] = $this->hoejabi_model->jumlahKeranjang();
 		$this->load->view('admin/dashboard', $data);
 
     }

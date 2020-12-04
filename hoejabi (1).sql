@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2020 at 01:56 PM
+-- Generation Time: Dec 04, 2020 at 12:59 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -64,6 +64,7 @@ CREATE TABLE `contact` (
 
 CREATE TABLE `keranjang` (
   `id_keranjang` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
   `id_produk` int(11) NOT NULL,
   `qty` int(11) NOT NULL,
   `subtotal` varchar(15) NOT NULL,
@@ -148,10 +149,24 @@ INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `nama`, `nohp`, 
 --
 
 --
+-- Indexes for table `keranjang`
+--
+ALTER TABLE `keranjang`
+  ADD PRIMARY KEY (`id_keranjang`),
+  ADD KEY `id_produk` (`id_produk`),
+  ADD KEY `id_user` (`id_user`);
+
+--
 -- Indexes for table `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`);
+
+--
+-- Indexes for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD PRIMARY KEY (`id_transaksi`);
 
 --
 -- Indexes for table `user`
@@ -174,6 +189,17 @@ ALTER TABLE `produk`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `keranjang`
+--
+ALTER TABLE `keranjang`
+  ADD CONSTRAINT `id_produk` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`),
+  ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

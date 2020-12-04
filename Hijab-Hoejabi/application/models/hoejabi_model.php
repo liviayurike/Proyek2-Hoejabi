@@ -97,21 +97,22 @@ class hoejabi_model extends CI_Model {
     public function tambahKeranjang($data)
     {
         
-        $insert_data['nama'] = $data['nama'];    
+        $insert_data['id_user'] = $data['id_user'];    
+        $insert_data['id_produk'] = $data['id_produk'];
+        $insert_data['qty'] = $data['qty'];
+        $insert_data['subtotal'] = $data['subtotal'];
         $insert_data['harga'] = $data['harga'];
-        $insert_data['deskripsi'] = $data['deskripsi'];
-        $insert_data['kategori_produk'] = $data['kategori_produk'];
-        $insert_data['gambar'] = $data['gambar'];
+        $insert_data['potongan'] = $data['potongan'];
 
-            $query = $this->db->insert('produk', $insert_data);
+            $query = $this->db->insert('keranjang', $insert_data);
         
     }
 
 
-    public function searchProduk(){
+    public function searchKeranjang(){
         $keyword=$this->input->post('keyword');
         $this->db->like('nama',$keyword);
-        return $this->db->get('produk')->result_array();
+        return $this->db->get('keranjang')->result_array();
     }
 
     // end keranjang
