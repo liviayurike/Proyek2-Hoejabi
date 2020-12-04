@@ -91,7 +91,7 @@
       </a>
       <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="<?php echo base_url(); ?>admin/keranjang"><i class="fas fa-fw fa-location-arrow" aria-hidden="true"></i> Data Keranjang</a>
+          <a class="collapse-item" href="<?php echo base_url(); ?>admin/keranjang"><i class="fas fa-fw fa-shopping-cart" aria-hidden="true"></i> Data Keranjang</a>
           <a class="collapse-item" href="<?php echo base_url(); ?>admin/tambahKeranjang"><i class="fas fa-fw fa-plus" aria-hidden="true"></i>Tambah Keranjang</a>
         </div>
       </div>

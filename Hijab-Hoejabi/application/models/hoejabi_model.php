@@ -59,6 +59,63 @@ class hoejabi_model extends CI_Model {
 
     // end produk
 
+    //keranjang
+    public function getKeranjang(){
+        return $this->db->get('keranjang')->result();
+    }
+
+    public function getKeranjangId($id_keranjang)
+    {
+        return $this->db->get_where('keranjang',['id_keranjang' => $id_keranjang])->row();
+    }
+
+    public function datatabelsKeranjang()
+    {
+        $query = $this->db->order_by('id_keranjang','DESC')->get('keranjang');
+        return $query->result();
+    }
+
+    public function hapuskeranjang($id_keranjang)
+    {
+        $this->db->where('id_keranjang', $id_keranjang);
+        $this->db->delete('keranjang');
+    }
+
+    public function jumlahKeranjang()
+    {
+        $query = $this->db->get('keranjang');
+        if($query->num_rows()>0)
+        {
+          return $query->num_rows();
+        }
+        else
+        {
+          return 0;
+        }
+    }
+
+    public function tambahKeranjang($data)
+    {
+        
+        $insert_data['nama'] = $data['nama'];    
+        $insert_data['harga'] = $data['harga'];
+        $insert_data['deskripsi'] = $data['deskripsi'];
+        $insert_data['kategori_produk'] = $data['kategori_produk'];
+        $insert_data['gambar'] = $data['gambar'];
+
+            $query = $this->db->insert('produk', $insert_data);
+        
+    }
+
+
+    public function searchProduk(){
+        $keyword=$this->input->post('keyword');
+        $this->db->like('nama',$keyword);
+        return $this->db->get('produk')->result_array();
+    }
+
+    // end keranjang
+
     // testimonial
     public function getTestimonial(){
         return $this->db->get('testimonial')->result_array();
