@@ -78,11 +78,16 @@
                                                         <tr>
                                                             <td class="text-right">Kategori Produk</td>
                                                             <td>:</td>
-                                                            <td><select class="form-control" name="kategori_produk" size="30" value="<?= $p['produk']; ?>">
+                                                            <td><select class="form-control" name="kategori_produk" value="<?= $p['produk']; ?>">
                                                                     <option>Hijab</option>
                                                                     <option>Accesories</option>
                                                                     <option>Pakaian</option>
                                                                 </select>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-right">Stok</td>
+                                                            <td>:</td>
+                                                            <td><input name="stok" id="stok" type="number" size="30"></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="text-right">Gambar</td>

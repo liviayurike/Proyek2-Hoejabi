@@ -74,7 +74,7 @@
                                         <td><?= $p->harga; ?></td>
                                         <td><?= $p->deskripsi; ?></td>
                                         <td><?= $p->kategori_produk; ?></td>
-                                        <td><?= $p->stok ?></td>
+                                        <td><?= $p->stok; ?></td>
                                         <td><?= $p->gambar; ?></td>
                                         <td>
                                             <a class="btn btn-warning" href="<?= base_url(); ?>Admin/Produk/EditProduk/<?= $p->id_produk; ?>"> Edit</a>
