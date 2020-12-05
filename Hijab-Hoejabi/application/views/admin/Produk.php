@@ -25,7 +25,7 @@
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo base_url(); ?>admin/logout" data-toggle="modal" data-target="#logoutModal">
+                        <a class="dropdown-item" href="<?php echo base_url(); ?>Login/logout" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
@@ -60,6 +60,7 @@
                                     <th>Harga</th>
                                     <th>Deskripsi</th>
                                     <th>Kategori Produk</th>
+                                    <th>Stok</th>
                                     <th>Gambar</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -71,12 +72,13 @@
                                         <td><?= $p->id_produk; ?></td>
                                         <td><?= $p->nama; ?></td>
                                         <td><?= $p->harga; ?></td>
-                                        <td><?= $p->Deskripsi; ?></td>
+                                        <td><?= $p->deskripsi; ?></td>
                                         <td><?= $p->kategori_produk; ?></td>
+                                        <td><?= $p->stok ?></td>
                                         <td><?= $p->gambar; ?></td>
                                         <td>
-                                            <a class="btn btn-warning" href="<?= base_url(); ?>Admin/Produk/EditProduk/<?= $u->id_user; ?>"> Edit</a>
-                                            <a class="btn btn-danger" href="<?php echo base_url(); ?>Admin/Produk/HapusProduk/<?= $u->id_user; ?>"> Hapus</a></td>
+                                            <a class="btn btn-warning" href="<?= base_url(); ?>Admin/Produk/EditProduk/<?= $p->id_produk; ?>"> Edit</a>
+                                            <a class="btn btn-danger" href="<?php echo base_url(); ?>Admin/Produk/HapusProduk/<?= $p->id_produk; ?>"> Hapus</a></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>

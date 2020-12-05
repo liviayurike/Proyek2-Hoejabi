@@ -38,19 +38,19 @@
         <!-- End of Topbar -->
         <!-- End of Topbar -->
         <!-- Page Heading -->
-        <?php foreach ($user as $u) : ?>
+        <?php foreach ($produk as $p) : ?>
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-users"></i> User <?= $u['nama']; ?></h1><br>
+                <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-users"></i> Produk</h1><br>
 
                 <div class="card shadow mb-4">
 
                     <div class="card-body">
                         <div class="table-responsive">
                             <div class="col-md-7">
-                                <a class="btn text-left bg-maroon text-white" width="15px" style="margin-bottom: 20px;" href="<?php echo base_url(); ?>Admin/User"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</a><br>
+                                <a class="btn text-left bg-maroon text-white" width="15px" style="margin-bottom: 20px;" href="<?php echo base_url(); ?>Admin/Produk"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</a><br>
                                 <div class="card border-left-info shadow h-100 py-2">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
@@ -67,39 +67,43 @@
                                                                 <td colspan="3" class="text-center"><i class="fa fa-user-circle fa-fw fa-5x"></i></td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-right">ID User</td>
+                                                                <td class="text-right">ID Produk</td>
                                                                 <td>:</td>
-                                                                <td><input name="id_user" id="id_user" type="number" size="5" value="<?= $u['id_user']; ?>" readonly></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-right">Email</td>
-                                                                <td>:</td>
-                                                                <td><input name="email" id="email" type="email" value="<?= $u['email']; ?>" size="30"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-right">Username</td>
-                                                                <td>:</td>
-                                                                <td><input name="username" id="username" type="text" value="<?= $u['username']; ?>" size="30"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-right">Password</td>
-                                                                <td>:</td>
-                                                                <td><input name="password" id="password" type="password" value="<?= $u['password']; ?>" size="30"></td>
+                                                                <td><input name="id_produk" id="id_produk" type="number" size="5" value="<?= $p['id_produk']; ?>" readonly></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="text-right">Nama</td>
                                                                 <td>:</td>
-                                                                <td><input name="nama" id="nama" type="text" size="30" value="<?= $u['nama']; ?>"></td>
+                                                                <td><input name="nama" id="nama" type="text" value="<?= $p['nama']; ?>" size="30"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-right">No HP</td>
+                                                                <td class="text-right">Harga</td>
                                                                 <td>:</td>
-                                                                <td><input name="nohp" id="nohp" type="text" value="<?= $u['nohp']; ?>" size="15" maxlength="12"></td>
+                                                                <td><input name="harga" id="harga" type="number" value="<?= $p['harga']; ?>" size="30"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-right">Alamat</td>
+                                                                <td class="text-right">Deskripsi</td>
                                                                 <td>:</td>
-                                                                <td><textarea name="alamat" id="alamat" cols="30"><?= $u['alamat']; ?></textarea></td>
+                                                                <td><input name="deskripsi" id="deskripsi" type="text" value="<?= $p['deskripsi']; ?>" size="30"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-right">Kategori Produk</td>
+                                                                <td>:</td>
+                                                                <td><select class="form-control" name="kategori_produk" size="30" value="<?= $p['produk']; ?>">
+                                                                        <option>Hijab</option>
+                                                                        <option>Accesories</option>
+                                                                        <option>Pakaian</option>
+                                                                    </select>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-right">Stok</td>
+                                                                <td>:</td>
+                                                                <td><input name="stok" id="stok" type="number" value="<?= $p['stok']; ?>" size="15" maxlength="12"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-right">Gambar</td>
+                                                                <td>:</td>
+                                                                <td><input name="gambar" id="gambar" type="file" size="15" maxlength="12"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"><button type="submit" name="submit" id="submit" class="btn bg-green-dark text-white float-right">Update</button></td>

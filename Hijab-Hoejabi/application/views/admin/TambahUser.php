@@ -25,7 +25,7 @@
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo base_url(); ?>admin/logout" data-toggle="modal" data-target="#logoutModal">
+                        <a class="dropdown-item" href="<?php echo base_url(); ?>Login/logout" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
@@ -42,7 +42,7 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-plus"></i> Tambah Member </h1><br>
+            <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-fw fa-plus"></i> Tambah User </h1><br>
 
             <div class="card shadow mb-4">
 

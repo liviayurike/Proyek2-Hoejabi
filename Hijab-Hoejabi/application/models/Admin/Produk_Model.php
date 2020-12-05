@@ -27,6 +27,7 @@ class Produk_Model extends CI_Model
         $insert_data['harga'] = $data['harga'];
         $insert_data['deskripsi'] = $data['deskripsi'];
         $insert_data['kategori_produk'] = $data['kategori_produk'];
+        $insert_data['stok'] = $data['stok'];
         $insert_data['gambar'] = $data['gambar'];
 
         $query = $this->db->insert('produk', $insert_data);
@@ -45,6 +46,7 @@ class Produk_Model extends CI_Model
             "harga" => $this->input->post('harga', true),
             "deskripsi" => $this->input->post('deskripsi', true),
             "kategori_produk" => $this->input->post('kategori_produk', true),
+            "stok" => $this->input->post('stok', true),
             "gambar" => $this->input->post('gambar', true),
 
         ];

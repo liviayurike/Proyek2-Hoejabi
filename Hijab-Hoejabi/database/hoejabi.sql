@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04 Des 2020 pada 21.09
--- Versi Server: 10.1.10-MariaDB
--- PHP Version: 7.3.2
+-- Waktu pembuatan: 17 Okt 2020 pada 11.06
+-- Versi server: 10.1.37-MariaDB
+-- Versi PHP: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,23 +25,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Struktur dari tabel `acc.hijab`
 --
 
-CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
-  `nama` varchar(30) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `admin`
---
-
-INSERT INTO `admin` (`id`, `nama`, `username`, `password`) VALUES
-(0, 'Nurus', 'nurus', 'nurus123'),
-(1, 'Nurus', 'nurus', 'nurus123');
+CREATE TABLE `acc.hijab` (
+  `id` int(20) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `deskripsi` varchar(10000) NOT NULL,
+  `gambar` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -58,31 +53,28 @@ CREATE TABLE `contact` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `keranjang`
+-- Struktur dari tabel `hijab`
 --
 
-CREATE TABLE `keranjang` (
-  `id_keranjang` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
-  `id_produk` int(11) NOT NULL,
-  `qty` int(11) NOT NULL,
-  `subtotal` varchar(15) NOT NULL,
-  `harga` varchar(30) NOT NULL,
-  `potongan` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `hijab` (
+  `id` int(10) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `deskripsi` varchar(10000) NOT NULL,
+  `gambar` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `produk`
+-- Struktur dari tabel `pakaian`
 --
 
-CREATE TABLE `produk` (
-  `id_produk` int(10) NOT NULL,
+CREATE TABLE `pakaian` (
+  `id` int(20) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `harga` int(20) NOT NULL,
   `deskripsi` varchar(10000) NOT NULL,
-  `kategori_produk` varchar(100) NOT NULL,
   `gambar` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -93,7 +85,7 @@ CREATE TABLE `produk` (
 --
 
 CREATE TABLE `testimonial` (
-  `id_testi` int(10) NOT NULL,
+  `id` int(10) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
   `deskripsi` varchar(10000) NOT NULL,
@@ -107,15 +99,8 @@ CREATE TABLE `testimonial` (
 --
 
 CREATE TABLE `transaksi` (
-  `id_transaksi` int(10) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `notelp` varchar(30) NOT NULL,
-  `alamat` text NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `produk` varchar(30) NOT NULL,
-  `harga` varchar(30) NOT NULL,
-  `totalharga` varchar(30) NOT NULL,
-  `viapembayaran` varchar(30) NOT NULL
+  `id` int(10) NOT NULL,
+  `nama` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -125,78 +110,53 @@ CREATE TABLE `transaksi` (
 --
 
 CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
-  `email` varchar(100) NOT NULL,
+  `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `nohp` varchar(30) NOT NULL,
-  `alamat` varchar(200) NOT NULL
+  `nama` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `nama`, `nohp`, `alamat`) VALUES
-(1, 'liviayurike@gmail.com', 'Livia', '$2y$10$8KgT/zwD5J//zBFVFtoqJOzdalwsNlg2Q45yrX/4bsCaIVvnllXzK', 'Livia Yurike', '', ''),
-(5, 'nuruslaily@gmail.com', 'nuruslailya', '$2y$10$AheuPl4Nul9Tw.e0Ow64b.RFxGK8Hr/KreoaOiffUTDDyBhIAUGl.', 'nurus', '08816254736', 'jl ikan tombro'),
-(9, 'Admin@gmail.com', 'Admin', 'Admin', 'Admin', '0341445654', 'Jl Admin');
+INSERT INTO `user` (`id`, `username`, `password`, `nama`) VALUES
+(1, 'Livia', '$2y$10$8KgT/zwD5J//zBFVFtoqJOzdalwsNlg2Q45yrX/4bsCaIVvnllXzK', 'Livia Yurike'),
+(2, '', '$2y$10$mnZvXUnCDvRIZuXnXjCyq.oUTijylGNfkOt8cnUydBJEPG2QEjrEC', ''),
+(3, '', '$2y$10$x.M.ogmRXUo2QxIUwGfsq.RTF/EijDDqkCsDhoCoU.mC6awWrAN1q', '');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `keranjang`
+-- Indeks untuk tabel `hijab`
 --
-ALTER TABLE `keranjang`
-  ADD PRIMARY KEY (`id_keranjang`),
-  ADD KEY `id_produk` (`id_produk`),
-  ADD KEY `id_user` (`id_user`);
+ALTER TABLE `hijab`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `produk`
---
-ALTER TABLE `produk`
-  ADD PRIMARY KEY (`id_produk`);
-
---
--- Indexes for table `transaksi`
---
-ALTER TABLE `transaksi`
-  ADD PRIMARY KEY (`id_transaksi`);
-
---
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`id_user`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `produk`
+-- AUTO_INCREMENT untuk tabel `hijab`
 --
-ALTER TABLE `produk`
-  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `hijab`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
---
-
---
--- Ketidakleluasaan untuk tabel `keranjang`
---
-ALTER TABLE `keranjang`
-  ADD CONSTRAINT `id_produk` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`),
-  ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`);
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

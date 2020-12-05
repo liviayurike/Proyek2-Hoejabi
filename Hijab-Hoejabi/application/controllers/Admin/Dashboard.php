@@ -14,6 +14,8 @@ class Dashboard extends CI_Controller
         $data['produk'] = $this->Dashboard_Model->jumlahProduk();
         $data['member'] = $this->Dashboard_Model->jumlahMember();
         $data['keranjang'] = $this->Dashboard_Model->jumlahKeranjang();
+
+
         $this->load->view('Template_Admin/Header', $data);
         $this->load->view('Admin/Dashboard', $data);
         $this->load->view('Template_Admin/Footer', $data);

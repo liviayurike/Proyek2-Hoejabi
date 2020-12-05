@@ -5,19 +5,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class login_model extends CI_Model
 {
 
-    function login($username, $password)
+    public function cek_login()
     {
-        $this->db->select('username,password');
-        $this->db->from('user');
-        $this->db->where('username', $username);
-        $this->db->where('password', $password);
-        $this->db->limit(1);
+        $username = set_value('username');
+        $password = set_value('password');
 
-        $query = $this->db->get();
-        if ($query->num_rows() == 1) {
-            return $query->result();
+        $result = $this->db
+            ->where('username', $username)
+            ->where('password', $password)
+            ->limit(1)
+            ->get('user');
+
+        if ($result->num_rows() > 0) {
+            return $result->row();
         } else {
-            return false;
+            return array();
         }
     }
 }

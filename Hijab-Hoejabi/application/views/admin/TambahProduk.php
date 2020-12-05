@@ -25,7 +25,7 @@
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo base_url(); ?>admin/logout" data-toggle="modal" data-target="#logoutModal">
+                        <a class="dropdown-item" href="<?php echo base_url(); ?>Login/logout" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
@@ -78,7 +78,11 @@
                                                         <tr>
                                                             <td class="text-right">Kategori Produk</td>
                                                             <td>:</td>
-                                                            <td><input name="kategori_produk" id="kategori_produk" type="text" size="30"></td>
+                                                            <td><select class="form-control" name="kategori_produk" size="30" value="<?= $p['produk']; ?>">
+                                                                    <option>Hijab</option>
+                                                                    <option>Accesories</option>
+                                                                    <option>Pakaian</option>
+                                                                </select>
                                                         </tr>
                                                         <tr>
                                                             <td class="text-right">Gambar</td>

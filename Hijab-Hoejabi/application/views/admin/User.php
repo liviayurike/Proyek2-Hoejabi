@@ -25,7 +25,7 @@
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo base_url(); ?>admin/logout" data-toggle="modal" data-target="#logoutModal">
+                        <a class="dropdown-item" href="<?php echo base_url(); ?>Login/logout" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
@@ -52,7 +52,7 @@
                             <?php echo $this->session->flashdata('hasil'); ?>
                         </font>
 
-                        <table class="table table-bordered table-hover" id="dataTable" width="110%" cellspacing="0" style="color: black">
+                        <table class="table table-bordered table-hover" id="dataTable" width="120%" cellspacing="0" style="color: black">
                             <thead class="table-dark bg-green-dark text-white" align="center" style="font-size: 15px">
                                 <tr>
                                     <th>ID User</th>
