@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2020 at 12:59 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.4
+-- Generation Time: 04 Des 2020 pada 21.09
+-- Versi Server: 10.1.10-MariaDB
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -24,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,7 +34,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id`, `nama`, `username`, `password`) VALUES
@@ -45,7 +44,7 @@ INSERT INTO `admin` (`id`, `nama`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Struktur dari tabel `contact`
 --
 
 CREATE TABLE `contact` (
@@ -59,7 +58,7 @@ CREATE TABLE `contact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `keranjang`
+-- Struktur dari tabel `keranjang`
 --
 
 CREATE TABLE `keranjang` (
@@ -75,7 +74,7 @@ CREATE TABLE `keranjang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produk`
+-- Struktur dari tabel `produk`
 --
 
 CREATE TABLE `produk` (
@@ -90,7 +89,7 @@ CREATE TABLE `produk` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `testimonial`
+-- Struktur dari tabel `testimonial`
 --
 
 CREATE TABLE `testimonial` (
@@ -104,7 +103,7 @@ CREATE TABLE `testimonial` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaksi`
+-- Struktur dari tabel `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -122,7 +121,7 @@ CREATE TABLE `transaksi` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -136,13 +135,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `nama`, `nohp`, `alamat`) VALUES
 (1, 'liviayurike@gmail.com', 'Livia', '$2y$10$8KgT/zwD5J//zBFVFtoqJOzdalwsNlg2Q45yrX/4bsCaIVvnllXzK', 'Livia Yurike', '', ''),
-(4, '', 'liviayurike', '$2y$10$oOy4ceRpTbCtudZClaHG7eFRDkdguFqwpO/V0/6UVxWyLMExS8dK.', 'liviaaay', '', ''),
-(5, 'nuruslaily@gmail.com', 'nuruslailya', '$2y$10$AheuPl4Nul9Tw.e0Ow64b.RFxGK8Hr/KreoaOiffUTDDyBhIAUGl.', 'nurus', '08816254736', 'jl ikan tombro');
+(5, 'nuruslaily@gmail.com', 'nuruslailya', '$2y$10$AheuPl4Nul9Tw.e0Ow64b.RFxGK8Hr/KreoaOiffUTDDyBhIAUGl.', 'nurus', '08816254736', 'jl ikan tombro'),
+(9, 'Admin@gmail.com', 'Admin', 'Admin', 'Admin', '0341445654', 'Jl Admin');
 
 --
 -- Indexes for dumped tables
@@ -183,24 +182,21 @@ ALTER TABLE `user`
 --
 ALTER TABLE `produk`
   MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
 
 --
--- Constraints for dumped tables
---
-
---
--- Constraints for table `keranjang`
+-- Ketidakleluasaan untuk tabel `keranjang`
 --
 ALTER TABLE `keranjang`
   ADD CONSTRAINT `id_produk` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`),
   ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
