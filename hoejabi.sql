@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 04 Des 2020 pada 21.09
+-- Generation Time: 05 Des 2020 pada 16.14
 -- Versi Server: 10.1.10-MariaDB
 -- PHP Version: 7.3.2
 
@@ -83,7 +83,8 @@ CREATE TABLE `produk` (
   `harga` int(20) NOT NULL,
   `deskripsi` varchar(10000) NOT NULL,
   `kategori_produk` varchar(100) NOT NULL,
-  `gambar` varchar(300) NOT NULL
+  `stok` int(11) NOT NULL,
+  `gambar` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -129,6 +130,7 @@ CREATE TABLE `user` (
   `email` varchar(100) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `role_id` tinyint(4) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `nohp` varchar(30) NOT NULL,
   `alamat` varchar(200) NOT NULL
@@ -138,10 +140,10 @@ CREATE TABLE `user` (
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `nama`, `nohp`, `alamat`) VALUES
-(1, 'liviayurike@gmail.com', 'Livia', '$2y$10$8KgT/zwD5J//zBFVFtoqJOzdalwsNlg2Q45yrX/4bsCaIVvnllXzK', 'Livia Yurike', '', ''),
-(5, 'nuruslaily@gmail.com', 'nuruslailya', '$2y$10$AheuPl4Nul9Tw.e0Ow64b.RFxGK8Hr/KreoaOiffUTDDyBhIAUGl.', 'nurus', '08816254736', 'jl ikan tombro'),
-(9, 'Admin@gmail.com', 'Admin', 'Admin', 'Admin', '0341445654', 'Jl Admin');
+INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `role_id`, `nama`, `nohp`, `alamat`) VALUES
+(1, 'liviayurike@gmail.com', 'Livia', 'Livia', 2, 'Livia Yurike', '08123456789', 'Jl Rayaaaaaaa'),
+(5, 'nuruslaily@gmail.com', 'nuruslailya', 'nurus', 2, 'nurus', '08816254736', 'jl ikan tombro'),
+(9, 'Admin@gmail.com', 'Admin', 'Admin', 1, 'Admin', '0341445654', 'Jl Mulia');
 
 --
 -- Indexes for dumped tables
@@ -181,7 +183,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user`
 --
