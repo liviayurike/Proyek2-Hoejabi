@@ -17,12 +17,12 @@ if(isset($_POST['transaksi'])){
 
     // buat query
     $sql = "INSERT INTO transaksi (nama, notelp, alamat, email, produk, harga, totalharga, viapembayaran) VALUE ('$nama', '$notelp', '$alamat', '$email', '$produk', '$harga', '$totalharga', '$viapembayaran')";
-    $query = mysqli_query($db, $sql);
+    $query = mysqli_query($database, $sql);
 
     // apakah query simpan berhasil?
     if( $query ) {
         // kalau berhasil alihkan ke halaman index.php dengan status=sukses
-        header('Location: index.php?status=sukses');
+        header('Location: list-transaksi.php?status=sukses');
     } else {
         // kalau gagal alihkan ke halaman indek.php dengan status=gagal
         header('Location: index.php?status=gagal');

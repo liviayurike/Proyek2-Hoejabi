@@ -1,5 +1,30 @@
-<!DOCTYPE html>
-<html>
+<?php
+session_start();
+include("db_connect.php");
+$database = new database();
+$conn = mysqli_connect('localhost', 'root', '', 'hoejabi');
+
+if (!$conn) {
+    die ("Koneksi gagal. " . mysqli_connect_error()); // close koneksi
+  }
+
+  if (!isset($_GET['cari'])) {
+    $query = mysqli_query($conn, "SELECT * FROM produk");
+  } else {
+    $query = mysqli_query($conn, "SELECT * FROM produk WHERE nama_produk LIKE '%" . $_GET['cari'] . "%'");
+  }
+
+    if (isset($_SESSION['pesan'])) {
+      echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+              ' . $_SESSION['pesan'] . '
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>';
+
+      unset($_SESSION['pesan']);
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,8 +121,8 @@
                     <thead>
                         <tr>
                         <th>No</th>
+                        <th>Nama User</td>
                         <th>Nama Produk</td>
-                        <th>Gambar</th>
                         <th>Potongan</th>
                         <th>Harga</th>
                         <th>Jumlah</th>
@@ -107,11 +132,11 @@
                         </tr>
                     </thead>
                 <tbody>
+                    
                     <?php
-                    $conect = "hoejabi";
                     $id_keranjang=session_id();
-                     $ambildata=mysqli_query($conect, "select*from keranjang, hijab, acchijab, pakaian where id_keranjang='$id_keranjang' and keranjang.id_hijab=hijab.id_hijab and keranjang.id_acchijab=acchijab.id_acchijab and keranjang.id_pakaian=pakaian.id_pakaian order by id_keranjang asc") or die(mysqli_error($conect));
-                     $jumlah=mysqli_num_rows($ambildata);
+                    $ambildata=mysqli_query($conn, "select * from keranjang, produk where id_keranjang='$id_keranjang' and keranjang.id_produk=produk.id_produk order by id_keranjang asc") or die(mysqli_error($conn));
+                    $jumlah=mysqli_num_rows($ambildata);
                     if($jumlah > 0){
 
                     while($a=mysqli_fetch_array($ambildata)){
@@ -123,8 +148,6 @@
                     <tr>
                         <td><?php echo $posisi=$posisi+1;?></td>
                             <td><?php echo $a['nama'];?></td>
-                            <td><a href="<?php echo $hostname;?>/assets/img/portfolio/<?php echo $a['gambar'];?>" data-rel="prettyPhoto" title="<?php echo $a['nama'];?>">
-                            <img src="assets/img/portfolio<?php echo $a['gambar'];?>" alt="<?php echo $a['nama'];?>" style="width:80px; height:70px;"></a></td>
                             <td><?php echo number_format($a['diskon']);?> %</td>
                             <td>
                             <?php
@@ -140,7 +163,7 @@
                             ?>
                             <td>
                             <form action="update_keranjang.php" method="post">
-                            <input type="hidden" size="5" name="id_hijab" value="<?php echo $a['id_hijab'];?>">
+                            <input type="hidden" size="5" name="id_produk" value="<?php echo $a['id_produk'];?>">
                                 <select name="qty" class="input-select">
                                     <?php $jum=$a['stok_produk'];
                                     for ($i=1; $i<=$jum; $i++){
@@ -160,7 +183,7 @@
                             <td>Rp. <?php echo number_format($rim);?></td>
                             <td>
 
-                        <a href="hapus_keranjang.php?id_keranjang=<?php echo $a['id_keranjang'];?>&id_hijab=<?php echo $a['id_hijab'];?>" title="Hapus data"><button name="delete" class="btn btn-danger btn-sm"><i class="fa fa-close fa-fw"></i></button></a>
+                        <a href="hapus_keranjang.php?id_keranjang=<?php echo $a['id_keranjang'];?>&id_produk=<?php echo $a['id_produk'];?>" title="Hapus data"><button name="delete" class="btn btn-danger btn-sm"><i class="fa fa-close fa-fw"></i></button></a>
 
                         </tr>
                     <?php
@@ -188,7 +211,7 @@
          ?>
          <tr>
                         <td colspan="10">
-                            Shopping Cart Anda MAsih Kosong, Silahkan Pilih Produk !
+                            Shopping Cart Anda Masih Kosong, Silahkan Pilih Produk !
                         </td>
                     </tr>
                     <?php
@@ -205,7 +228,7 @@
          <!--panel-->
          </div>
 		</div>
-	</section>
+    </section>
     </main>
     </body>
 </html>
