@@ -52,7 +52,7 @@
                             <?php echo $this->session->flashdata('hasil'); ?>
                         </font>
 
-                        <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0" style="color: black">
+                        <table class="table table-bordered table-hover" id="dataTable" width="110%" cellspacing="0" style="color: black">
                             <thead class="table-dark bg-green-dark text-white" align="center" style="font-size: 15px">
                                 <tr>
                                     <th>ID User</th>
@@ -75,6 +75,7 @@
                                         <td><?= $u->nohp; ?></td>
                                         <td><?= $u->alamat; ?></td>
                                         <td>
+                                            <a class="btn btn-success" href="<?= base_url(); ?>Admin/User/DetailUser/<?= $u->id_user; ?>"> Detail</a>
                                             <a class="btn btn-warning" href="<?= base_url(); ?>Admin/User/EditUser/<?= $u->id_user; ?>"> Edit</a>
                                             <a class="btn btn-danger" href="<?php echo base_url(); ?>Admin/User/HapusUser/<?= $u->id_user; ?>"> Hapus</a></td>
                                     </tr>

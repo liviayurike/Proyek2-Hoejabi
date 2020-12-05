@@ -43,9 +43,9 @@ class User extends CI_Controller
     public function detailUser($id_user)
     {
         $data['title'] = 'Detail User';
-        $data['User'] = $this->User_Model->GetUserId($id_user);
+        $data['user'] = $this->User_Model->GetUserId($id_user);
         $this->load->view('Template_Admin/Header', $data);
-        $this->load->view('Admin/DetailUser', $data);
+        $this->load->view('Admin/DetailUser');
         $this->load->view('Template_Admin/Footer', $data);
     }
 
