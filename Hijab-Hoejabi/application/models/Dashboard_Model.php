@@ -14,7 +14,19 @@ class Dashboard_Model extends CI_Model
             return 0;
         }
     }
+    public function tampil_data(){
+        return $this->db->get('produk');
+    }
 
+    public function detail_produk($id_produk)
+    {
+        $result =$this->db->where('id_produk', $id_produk)->get('produk');
+        if($result->num_rows() > 0){
+            return $result->result();
+        } else{
+            return false;
+        }
+    }
 
     // end produk
 

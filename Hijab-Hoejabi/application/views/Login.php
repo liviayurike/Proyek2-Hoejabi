@@ -1,7 +1,7 @@
 <body class="text-center">
     <?php echo $this->session->flashdata('pesan') ?>
 
-    <form class="form-signin" method="post" action="<?php echo base_url('Login/login') ?>" class="user">
+    <form class="form-signin" method="post" action="<?php echo base_url('Login/proses_login') ?>" class="user">
         <br>
         <img class="mb-4" src="assets/img/favicon.png" alt="" width="80" height="80">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>

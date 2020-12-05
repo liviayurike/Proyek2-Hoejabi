@@ -173,11 +173,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/1.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Vanya In Purple</a></h4>
+                                <h4><a href="portfolio-details.php">Vanya In Purple</a></h4>
                                 <p>RP 92.000</p>
                             </div>
                         </div>
@@ -188,11 +188,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/10.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/10.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Peniti Bohlam</a></h4>
+                                <h4><a href="portfolio-details.php">Peniti Bohlam</a></h4>
                                 <p>Rp 15000/pack</p>
                             </div>
                         </div>
@@ -203,11 +203,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Vanya In Grey</a></h4>
+                                <h4><a href="portfolio-details.php">Vanya In Grey</a></h4>
                                 <p>RP 92.000</p>
                             </div>
                         </div>
@@ -218,11 +218,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/14.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/14.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Kaluna Brukat Dress</a></h4>
+                                <h4><a href="portfolio-details.php">Kaluna Brukat Dress</a></h4>
                                 <p>Rp171.500</p>
                             </div>
                         </div>
@@ -233,11 +233,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/11.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/11.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Ciput Tali Satun</a></h4>
+                                <h4><a href="portfolio-details.php">Ciput Tali Satun</a></h4>
                                 <p>Rp. 18000</p>
                             </div>
                         </div>
@@ -248,11 +248,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 011</a></h4>
+                                <h4><a href="portfolio-details.php">VANAYA VAN 011</a></h4>
                                 <p>Rp155.000</p>
                             </div>
                         </div>
@@ -263,11 +263,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/15.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/15.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Brand New Valia Tunik</a></h4>
+                                <h4><a href="portfolio-details.php">Brand New Valia Tunik</a></h4>
                                 <p>Rp45.000</p>
                             </div>
                         </div>
@@ -278,11 +278,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/16.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/16.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Sahfa Blouse</a></h4>
+                                <h4><a href="portfolio-details.php">Sahfa Blouse</a></h4>
                                 <p>Rp94.000</p>
                             </div>
                         </div>
@@ -293,11 +293,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/12.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/12.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">Inner two tone</a></h4>
+                                <h4><a href="portfolio-details.php">Inner two tone</a></h4>
                                 <p>Rp. 25000</p>
                             </div>
                         </div>
@@ -308,11 +308,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/4.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/4.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 010</a></h4>
+                                <h4><a href="portfolio-details.php">VANAYA VAN 010</a></h4>
                                 <p>Rp155.000</p>
                             </div>
                         </div>
@@ -323,11 +323,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/6.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/6.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 005</a></h4>
+                                <h4><a href="portfolio-details.php">VANAYA VAN 005</a></h4>
                                 <p>Rp145.000</p>
                             </div>
                         </div>
@@ -338,11 +338,11 @@ if (!isset($_SESSION['is_login'])) {
                             <figure>
                                 <img src="assets/img/portfolio/7.jpg" class="img-fluid" alt="">
                                 <a href="assets/img/portfolio/7.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="portfolio-details.php" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="portfolio-details.html">VANAYA VAN 009</a></h4>
+                                <h4><a href="portfolio-details.php">VANAYA VAN 009</a></h4>
                                 <p>Rp145.000</p>
                             </div>
                         </div>

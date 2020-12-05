@@ -37,7 +37,7 @@ class Login extends CI_Controller
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>');
-                redirect('Login/login');
+                redirect('Login', 'refresh');
             } else {
                 $this->session->set_userdata('username', $cek->username);
                 $this->session->set_userdata('role_id', $cek->role_id);
@@ -47,7 +47,7 @@ class Login extends CI_Controller
                         redirect('Admin/Dashboard');
                         break;
                     case 2:
-                        redirect('Home');
+                        redirect('Dashboard_akhir');
                         break;
 
                     default:
